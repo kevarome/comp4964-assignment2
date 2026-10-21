@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP 4964 - Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>COMP 4964 - AWS S3 Image Gallery</h1>
+    <p>Images hosted on Amazon S3</p>
+
+    <div class="gallery">
+        <img src="https://comp4964-assignment2-gallery-2026.s3.us-west-2.amazonaws.com/candle.jpg" alt="Candle">
+        <img src="https://comp4964-assignment2-gallery-2026.s3.us-west-2.amazonaws.com/goat.jpg" alt="Goat">
+        <img src="https://comp4964-assignment2-gallery-2026.s3.us-west-2.amazonaws.com/tree.jpg" alt="Tree">
+    </div>
+</body>
+</html>
